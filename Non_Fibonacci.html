@@ -1,0 +1,16 @@
+<script>
+  num = +prompt("enter the number:");
+  (a = 0), (b = 1), (nonfib = 0);
+  while (nonfib !== num) {
+    for (i = a + 1; i < b; i++) {
+      console.log(i);
+      nonfib++;
+      if (nonfib == num) {
+        break;
+      }
+    }
+    c = a + b;
+    a = b;
+    b = c;
+  }
+</script>
